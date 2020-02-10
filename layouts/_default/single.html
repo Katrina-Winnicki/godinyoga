@@ -1,0 +1,47 @@
+{{ define "head" }}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="/single.css">
+<style>
+    #navbar>#tab_{{trim .File.Dir "/"}} {color:white;}
+</style>
+<style>
+    html {
+        min-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 204, .15);
+        background-image: url({{.Params.background}});
+    }
+</style>
+{{ end }}
+
+{{ define "body" }}
+<div class="pageSection">
+    <table class="header" id="top">
+        <tr>
+            <td><img src="/MomsPic/GIYLogo.jpg" width=100 alt="God In Yoga Logo" class="Logo"></td>
+            <td>
+                <h1 class="GodInYoga">God In Yoga</h1>
+            </td>
+            <td><img src="/MomsPic/RYTLogo.png" width=100 alt="RYT 200 Yoga Alliance Logo" class="RYT"></td>
+        </tr>
+        <tr>
+            <td><a id="tab_" href="/">Home</a></td>
+            <td><a id="tab_about" href="/about/">About Me</a></td>
+            <td><a id="tab_calander" href="/calander/">Calander</a></td>
+            <td><a id="tab_partner" href="/partners/">Our Partners</a></td>
+        </tr>
+    </table>
+
+    <div class="mainSub">
+        {{.Content}}
+    </div>
+
+    <footer>
+        <p>Picture of Sea of Galilee</p>
+        <a class="facebookLink" href="https://www.facebook.com/God-In-Yoga-320698021983085/">Find us on FaceBook</a>
+        <p>&copy; 2020 Katrina Winnicki</p>
+    </footer>
+</div>
+{{ end }}

@@ -1,0 +1,5 @@
+baseURL = "https://godinyoga.com/"
+languageCode = "en-us"
+title = "God In Yoga"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+publishDir = "docs"
