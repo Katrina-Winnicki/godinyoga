@@ -109,3 +109,19 @@ article > p {
     background-image: url(MomsPic/Pease.jpg);
 } */
 
+#scheduleFlex {
+    display: flex;
+}
+#scheduleFlex table {
+    /* border: 1px solid black; */
+}
+#scheduleFlex td {
+    border: 10px solid transparent;
+    border-top: 1px solid black;
+}
+
+@media only screen and (max-width: 1024px) {
+    #scheduleFlex {
+        flex-direction: column;
+    }
+}
