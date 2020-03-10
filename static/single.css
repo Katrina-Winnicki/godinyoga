@@ -6,6 +6,12 @@
     padding:0;
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 article {
     font-family:'Raleway', Arial, Helvetica, sans-serif;
@@ -58,10 +64,6 @@ article > p {
     border: 4px black double;
 }
 
-.RYT {
-    text-align: right;
-}
-
 .facebookLink {
     font-family:'Raleway', Arial, Helvetica, sans-serif;
 }
@@ -99,7 +101,10 @@ article > p {
     border-radius: 25px;
 }
 
-
+#navbar > a {
+    text-decoration: none;
+    color: black;
+}
 
 /* #pastEvents {
     background-image: url(MomsPic/Ocean.jpg);
@@ -108,20 +113,3 @@ article > p {
 #sampleClass {
     background-image: url(MomsPic/Pease.jpg);
 } */
-
-#scheduleFlex {
-    display: flex;
-}
-#scheduleFlex table {
-    /* border: 1px solid black; */
-}
-#scheduleFlex td {
-    border: 10px solid transparent;
-    border-top: 1px solid black;
-}
-
-@media only screen and (max-width: 1024px) {
-    #scheduleFlex {
-        flex-direction: column;
-    }
-}
